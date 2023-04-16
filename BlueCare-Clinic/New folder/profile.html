@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>Profile</h1>
+  <form>
+  	<label class="label" for="frstn">Firstname:</label>
+	     <input type="text" id="frstn" name="firstname" required><br><br>
+	<label class="label" for="mddln">Middlename:</label>
+	     <input type="text" id="mddln" name="middlename" required><br><br>
+	<label class="label" for="lstn">Lastname:</label>
+	     <input type="text" id="lstn" name="lastname" required><br><br>
+	<label class="label" id="gndr">Gender:</label>	
+	<label for="gndr1" id="ml">MALE</label>
+	     <input type="radio" id="gndr1"></input>
+	<label for="gndr2" id="fml">FEMALE</label>
+	     <input type="radio" id="gndr2"></input><br><br>
+	<label class="cndstat" id="cnds">Condition Status</label>
+	     <input type="text" id="cndstat" name="conditionstatus" required><br><br>
+    <label class="label">Civil Status:</label>
+	      <select id="cvls">
+	            <option value="married">MARRIED</option>
+	            <option value="single">SINGLE</option>	
+	            <option value="widow">WIDOW</option>
+	            <option selected>&nbsp;</option>
+	        </select><br><br>
+	<label class="label" for="bdy">Date of Birth:</label>
+		 <input type="date" id="bdy" name="dateofbirth" placeholder="mm/dd/yyyy" required><br><br> 
+	<label class="label" for="bplc">Place of Birth:</label>
+		 <input type="text" id="bplc" name="placeofbirth" required><br><br>
+    <label class="label" for="cllphn">Cellphone Number:</label>					
+		 <input type="number" id="cllphn" name="phonenumber" placeholder="1111-222-3333" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required><br><br>					
+	<label class="label" for="eml">Email:</label>
+		 <input type="email" id="eml" name="email" required><br><br>
+    <label class="label" for="ctzshp">Citizenship:</label>
+		 <input type="text" id="ctzshp" name="citizenship" required><br><br>
+	<label class="label">Religion:</label>
+			  <select id="rlgn">
+			  	   <option selected>&nbsp;</option>
+				   <option value="catholic">Roman Catholic</option>
+				   <option value="inc">Iglesia ni Cristo</option>
+				   <option value="born again">Islam</option>
+				   <option value="muslim">Other</option>
+			  </select><br><br>
+			  <button type="submit" id="signup">Create Profile</button>
+  </form>
+  <script>
+
+		document.querySelector('#signup').onclick = function(){
+
+			var fn = document.querySelector('#frstn').value,
+			    md = document.querySelector('#mddln').value,
+			    ln = document.querySelector('#lstn').value,
+			    gndr = document.querySelector('#gndr').value,
+			    cnd = document.querySelector('#cndstat').value,
+			    cs = document.querySelector('#cvls').value,
+			    dob = document.querySelector('#bdy').value,
+			    pob = document.querySelector('#bplc').value,
+			    cpno = document.querySelector('#cllphn').value,
+			    em = document.querySelector('#eml').value,
+			    ct = document.querySelector('#ctznshp').value,
+			    rel = document.querySelector('#rlgn').value,
+			if(frstn, mddln, lstn, gndr,cnd, cvls, bdy, bplc, cllphn, eml, ctznshp, rlgn, == ""){
+				alert("Field cannot be empty.");
+			}
+	</script>
+</body>
+</html>
