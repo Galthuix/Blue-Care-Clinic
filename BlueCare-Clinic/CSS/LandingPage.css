@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #205295; 
+    background-color: white; 
 }
 *{
     padding: 0;
@@ -14,15 +14,15 @@ header{
     display: flex;
     flex-direction: row;
     color: #FFF2F2;
-    background-color: #2C74B3;
-    padding: 0.5vw;
+    background-color: #0A4D68;
+    padding: 0.9vw;
 }
 header img{
-    margin: auto 0% auto 3%;
+    margin: auto 0% auto 6%;
 }
 header h1{
     font-family: 'Gruppo', cursive;
-    margin: auto 0% 0.7vw 2.9%;
+    margin: auto 0% 0.7vw 2.3%;
     font-size: 2vw;
     font-weight: bold;
 }
@@ -30,7 +30,7 @@ header h1{
     list-style: none;
     display: flex;
     flex-direction: row;
-    margin: 0.5vw 0% 0% 26vw;
+    margin: 0.5vw 0% 0% 30%;
 }
 .link{
     padding:2vw 2.8vw 2vw 2.8vw;
@@ -44,11 +44,11 @@ header h1{
     color: #19A7CE;
 }
 
-/* Section No.1 */
+
+/* Section CSS*/
 #section1{
     height: 100vh;
     width: auto;
-    background-color: aqua;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -86,17 +86,18 @@ header h1{
     left: 60%;
 }
 #section2{
-    background-color: red;
     width: 100%;
     height: 100vh;
 }
 #section3{
-    background-color: pink;
+    background-image: url(../IMAGE/bg-out-doctors.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
 }
 #section4{
-    background-color: limegreen;
     width: 100%;
     height: 100vh;
 }
@@ -104,5 +105,131 @@ header h1{
 footer{
     width: 100%;
     height: 50%;
-    background-color: grey;
+    background-color: #0A4D68;
+}
+
+
+/* Services CSS*/
+.taas{
+
+    display: flex;
+    flex-direction: row;
+	color: #000000;
+	font-size: 20px;
+    position: absolute;
+}
+.taas img{
+    margin-top: -50px;
+    margin-left: 5%;
+}
+.taas p{
+    font-size: 1.5vw;
+    padding: 4.5%;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+}
+#section2 hr{
+    width:60%;
+    margin: 1.5% auto;
+    border: 1px solid black;
+}
+
+.bluecare h1{
+	color: #000000;
+    text-align: center;
+    position: relative;
+    font-size: 2.5vw;
+    font-weight: 500;
+    padding-top: 16%;
+    font-family: 'Cinzel', serif;
+}
+.content{
+	display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+    padding-top: 1%;
+}
+.boxS1 img, .boxS2 img, .boxS3 img{
+    border-radius: 20%;
+}
+.boxS1 p, .boxS2 p, .boxS3 p{
+    text-align: justify;
+    margin-top:6.5%;
+    font-size: 1vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+.cardS1, .cardS2, .cardS3 {
+    width: 35%;
+    margin-left: 5%;
+    margin-right: 5%;
+	padding: 2% 3% 3% 3%;
+	border-radius: 6%;
+	background-color: #569DAA;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.01s;
+}
+.cardS1:hover, .cardS2:hover, .cardS3:hover{
+    background-color: #007d80;
+    transform: scale(1.1, 1.1);
+    transform: rotate(2deg);
+    box-shadow: 15px 10px black;
+}
+
+
+/* Our Doctors CSS */
+#Mission-Text > h1{
+    font-size: 3vw;
+    font-family: 'Cinzel', serif;
+    padding-top: 1%;
+    text-align: center;
+}
+.img-content > img {
+    border-radius: 8rem;
+}
+.img-content > p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5vw;
+    margin-left: 3%;
+    width: 70%;
+    padding: 1.4%;
+    text-align: justify;
+}
+.img-content{
+    margin-top: 1%;
+    margin-left: 8%;
+    display: flex;
+    flex-direction: row;
+}
+.OD-hr1{
+    width:60%;
+    margin: 2% auto 0% auto;
+    border: 1px solid black;
+}
+.OD-hr2{
+    width:80%;
+    margin: 0% auto 0% auto;
+    border: 1px solid black;
+}
+.Our-Doctors{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 3vw;
+}
+#Doctors-Container1, #Doctors-Container2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+#Doctors-Container1 > span, #Doctors-Container2 > span {
+    width: 100%; height: 100%;
+}
+#Doctors-Container1 span > h3, #Doctors-Container2 span > h3{
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'Rajdhani', sans-serif;
+}
+#Doctors-Container1 span > img, #Doctors-Container2 span > img{
+    margin-left: 37%;
+    border-radius: 50%;
 }
