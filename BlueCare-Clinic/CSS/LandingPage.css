@@ -21,19 +21,21 @@ header img{
     margin: auto 0% auto 6%;
 }
 header h1{
-    font-family: 'Gruppo', cursive;
+    font-family: 'Bruno Ace SC', cursive;
     margin: auto 0% 0.7vw 2.3%;
-    font-size: 2vw;
+    font-size: 1.6vw;
     font-weight: bold;
+    width: 25%;
+    letter-spacing: 0.2em;
 }
 .link_Container{
     list-style: none;
     display: flex;
     flex-direction: row;
-    margin: 0.5vw 0% 0% 30%;
+    margin: 0.5vw 0% 0% 22%;
 }
 .link{
-    padding:2vw 2.8vw 2vw 2.8vw;
+    padding:2vw 2.1vw 2vw 2.1vw;
     text-decoration: none;
     color: #FFF2F2;
     font-family: 'Gruppo', cursive;
@@ -52,7 +54,7 @@ header h1{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url("..//IMAGE/HomePageImage(2).jpg");
+    background-image: url("..//IMAGE/BackGround-Img/HomePageImage\(2\).jpg");
     transform: scaleX(-1);
     position: relative;
    }
@@ -74,12 +76,13 @@ header h1{
     text-align: center;
     font-size: 4.4vw;
     width: 30vw;
-    font-family: 'Cinzel', serif;
+    font-family: 'Poltawski Nowy', serif;
     top: 19%;
     left: 9%;
     position: relative;
     transform: scaleX(1);
     color: white;
+    letter-spacing: 0.1em;
 }
 .land-Page-Con span{
     position: absolute;
@@ -90,7 +93,7 @@ header h1{
     height: 100vh;
 }
 #section3{
-    background-image: url(../IMAGE/bg-out-doctors.jpg);
+    background-image: url(../IMAGE/BackGround-Img/bg-out-doctors.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -124,12 +127,12 @@ footer{
 }
 .taas p{
     font-size: 1.5vw;
-    padding: 4.5%;
+    padding: 3.5%;
     font-family: 'Ubuntu', sans-serif;
     text-align: justify;
 }
 #section2 hr{
-    width:60%;
+    width:50%;
     margin: 1.5% auto;
     border: 1px solid black;
 }
@@ -137,11 +140,11 @@ footer{
 .bluecare h1{
 	color: #000000;
     text-align: center;
-    position: relative;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     font-weight: 500;
     padding-top: 16%;
-    font-family: 'Cinzel', serif;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: 0.1em;
 }
 .content{
 	display: flex;
@@ -160,8 +163,8 @@ footer{
 }
 .cardS1, .cardS2, .cardS3 {
     width: 35%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 4%;
+    margin-right: 6%;
 	padding: 2% 3% 3% 3%;
 	border-radius: 6%;
 	background-color: #569DAA;
@@ -173,14 +176,15 @@ footer{
     background-color: #007d80;
     transform: scale(1.1, 1.1);
     transform: rotate(2deg);
-    box-shadow: 15px 10px black;
+    box-shadow: 8px 4px black;
 }
 
 
 /* Our Doctors CSS */
 #Mission-Text > h1{
     font-size: 3vw;
-    font-family: 'Cinzel', serif;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: 0.1em;
     padding-top: 1%;
     text-align: center;
 }
@@ -213,8 +217,9 @@ footer{
 }
 .Our-Doctors{
     text-align: center;
-    font-family: 'Cinzel', serif;
-    font-size: 3vw;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 3.5vw;
 }
 #Doctors-Container1, #Doctors-Container2{
     display: flex;
@@ -232,4 +237,119 @@ footer{
 #Doctors-Container1 span > img, #Doctors-Container2 span > img{
     margin-left: 37%;
     border-radius: 50%;
+}
+
+/* How It Works */
+#section4 hr{
+    border: 1px solid black;
+    width: 90%;
+    margin: 0.5% auto 0% auto;
+}
+#HIW-Container > h2{
+    font-size: 2.5vw;
+    text-align: center;
+    margin-top: 4%;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: 0.1em;
+}
+#setp1to4, #step5to8{
+    display: flex;
+    flex-direction: row;
+}
+.step1{
+    margin: 3% 4% 2% 5%;
+}
+.step1 h1, .step2 h1, .step3 h1, .step4 h1, .step5 h1, .step6 h1, .step7 h1, .step8 h1{
+    text-align: center;
+    border: 1px solid black;
+    padding: 0.5vw;
+    border-radius: 100%;
+    width: 12%;
+}
+.step2, .step3, .step4{
+    margin: 3% 4% 2% 4%;
+}
+.step1-span, .step2-span, .step3-span, .step4-span{
+    padding: 3vw;
+}
+.step1-span > h2, .step2-span > h2, .step3-span > h2, .step4-span > h2{
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.step5{
+    margin: 1% 4% 2% 5%;
+}
+.step6, .step7, .step8{
+    margin: 1% 4% 2% 4%;
+}
+.step5-span, .step6-span, .step7-span, .step8-span{
+    padding: 3vw;
+}
+.step5-span > h2, .step6-span > h2, .step7-span > h2, .step8-span > h2{
+    margin-top: 1%;
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+
+/* Footer CSS */
+footer{
+    display: flex;
+    flex-direction: column;
+}
+#Footer-info{
+    display: flex;
+    flex-direction: row;
+}
+#head-para{
+    color: white;
+}
+#Footer-info img{
+    margin-left: 2%;
+    margin-top: -5%;
+}
+#head-para h3{
+    font-family: 'Cinzel', serif;
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 0.5%;
+}
+#head-para p{
+    font-size: 1vw;
+    font-family: 'Ubuntu', sans-serif;
+    text-align:center;
+    padding: 0.3%;
+}
+#head-para ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 5%;
+    margin-left: 12%;
+}
+#head-para ul li{
+    margin: auto 5% auto 7%;
+}
+#copy-rights{
+    color: white;
+    text-align: center;
+    font-size: 1.1vw;
+    font-family: 'Gruppo', cursive;
+    padding-bottom: 1%;
+}
+/* BTN */
+#Back-To-Top{
+    padding: 0%;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: 0px none black;
+    position: fixed;
+    overflow: inherit;
+    top: 90%;
+    left: 94%;
+    cursor: pointer;
 }
