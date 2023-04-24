@@ -1,0 +1,62 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #ffffff;
+	color: #fff;
+}
+.services{
+	padding: 50px 0;
+}
+.taas{
+	color: #000000;
+	padding: 0 30px;
+	margin: auto;
+	font-size: 20px;
+}
+.taas::after{
+	content: "";
+    position: absolute;
+    width: 1240px;
+    height: 3px;
+    background:#0c090a;
+    transform: translateX(3px);
+}
+.bluecare{
+	max-width: 1300px;
+	padding: 0 50px;
+	margin: auto;
+}
+.bluecare h1{
+	color: #000000;
+	padding: 20px;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.card{
+	padding: 75px 35px;
+	width: calc(26% - 20px);
+	border-radius: 6px;
+	background: #222;
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+	transition: color 0.03s;
+}
+.card:hover{
+    background-color: #007d80;
+}
+.box{
+	transform: all 0.3s ease;
+}
