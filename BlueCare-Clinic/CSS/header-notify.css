@@ -1,0 +1,90 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.sidebar-Container{
+    background-color: #0A4D68;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 5rem;
+    height: 100%;
+}
+.sidebar-Container img{
+    margin-top: 1vw;
+    margin-left: 0.1vw;
+    position: absolute;
+}
+ul{
+    list-style: none;
+    padding: 0 15px;
+}
+ul li{
+    display: flex;
+    margin: 6vw 0;
+    margin-left: 0.8vw;
+    justify-content: flex-start;
+    cursor: pointer;    
+}
+ul li:nth-last-child(6){
+    margin-top: 9vw;
+}
+ul li:nth-last-child(1){
+    margin-top: 13vw;
+}
+ul li a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+ul li a i{
+    margin-right: 2vw;
+}
+ul li a p{
+    color: white;
+    display: none;
+    font-family: Gruppo;
+    font-size: 1.3vw;
+    width: 50vw;
+}
+.sidebar-Container:hover{
+    width: 15rem;
+    transition-duration: 1s;
+}
+.sidebar-Container:hover ul li a p{
+    display: flex;
+    margin: 0.1vw;
+    transition-duration: 1s;
+}
+.sidebar-Container:hover ul li:nth-last-child(6){
+    margin-top: 8.3vw;
+    transition-duration: 1s;
+}
+.sidebar-Container:hover ul li:nth-last-child(1){
+    margin-top: 11vw;
+    transition-duration: 1s;
+}
+.sidebar-Container:hover ul li{
+    display: flex;
+    margin: 4.5vw 0;
+    transition-duration: 1s;
+    margin-left: 0.8vw;
+}
+.sidebar-Container:hover img{
+    transition-duration: 1s;
+    margin-left: 5.5vw;
+}
+#notify-btn button{
+    position: absolute;
+    left: 94%;
+    background-color: transparent;
+    border: 0px solid black;
+    font-size: 2vw;
+}
+
+
+
+
+

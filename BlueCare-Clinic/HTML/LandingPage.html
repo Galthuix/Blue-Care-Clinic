@@ -7,6 +7,7 @@
     <title>Blue Care Clinic</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <script src="../JAVASCRIPT/Landing-Page-Script.js"></script>
+    <link rel="stylesheet" href="../CSS/land-Function.css">
 
 <!-- Header Fonts Alegreya Sans SC-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,25 +48,106 @@
             <li><a href="#section4" class="link">How It Works</a></li>
         </ul>
     </header>
+
+
     <button onclick="topFunction()" id="Back-To-Top" title="Go To Top">
         <img src="../IMAGE/BackGround-Img/top-up.png" alt="Back To Top" width="50%" height="50%"></button>
-    <main>
+    
+    
+    
+        <main>
     <section class="section1" id="section1">
         <!-- Login Form/landing Page -->
         <div class="land-Page-Con">
-            <h1>We Provide Easiest Way To Your Health Care</h1>
-            <span>
-                <form action="" method="post">
-                    <h3>Log In</h3>
-                        <select name="PhoneNo" id="PhoneNo" >
-                            <option value="Number">PH +63</option>
+            <h1 class="firsth1">We Provide Easiest Way To Your Health Care</h1>
+
+
+
+
+            <!-- Log In Btn -->
+                <div class="Log-in" id="Log-in">
+                    <form action="#" id="login-form">
+                        <h1>Blue Care Clinic</h1>
+                        <img src="../IMAGE/How-It-Works/dial.png" alt="Enter Phone Number" width="100vw" height="100vw">
+                        <h3>Login Using Phone Number</h3>
+                        <select name="Phone-Code" id="Phone-Code">
+                            <option value="PH-Num-Code">PH (+63)</option>
                         </select>
-                    <input type="text" placeholder="Mobile Number">
-                     <span>
-                        <a href="#">Create Account</a>
-                    </span>
-                </form>
-            </span>
+                        <input type="tel" id="login-phone-num" name="login_Number" pattern="[0-9]{10}" autocomplete="off"
+                        title="You Should Enter 10 Digit Phone Number." placeholder="Phone Number">
+                        <br>
+                        <input type="button" value="Login" id="Login-btn" onclick="login_btn()">
+                        <br>
+                        <input type="button" value="Register" id="login-regiter-btn" onclick="register_btn()">
+                    </form>
+                </div>
+
+
+
+            <!-- Enter Phone Number Btn -->
+                <div class="Regis-phone-num" id="Regis-phone-num">
+                    <form action="#">
+                        <h1>Blue Care Clinic</h1>
+                        <img src="../IMAGE/How-It-Works/dial.png" alt="Enter Phone Number" width="100vw" height="100vw">
+                        <h3>Enter Phone Number</h3>
+                        <p>Enter valid number so we can send you and OTP verification code</p>
+                        <select name="Phone-Code" id="Phone-Code">
+                            <option value="PH-Num-Code">PH (+63)</option>
+                        </select>
+                        <input type="tel" id="regis-phone-num" name="Register_Number" pattern="[0-9]{10}" autocomplete="off"
+                        title="Enter Your Phone Number" placeholder="Phone Number">
+                        <br>
+                        <input type="button" value="Next" id="regis-btn-next" onclick="get_OTP()">
+                    </form>
+                </div>
+
+
+
+
+            <!-- Verification Code Btn -->
+                <div id="verify-form">
+                    <form action="#">
+                        <h1>Blue Care Clinic</h1>
+                        <img src="../IMAGE/How-It-Works/password.png" alt="Enter OTP-Verification" width="100vw" height="100vw">
+                        <h3>Enter OTP-Verification Code</h3>
+                        <p>Enter The OTP-Verification that sent to You "User"</p>
+                        <input type="tel" id="Veri-num" name="Veri_Number" pattern="[0-9]{6}" autocomplete="off"
+                        title="Enter the right OTP using 6 Digit Number " placeholder="OTP-Verification">
+                        <br>
+                        <input type="button" value="Proceed" id="veri-btn-proceed" onclick="enter_PIN()">
+                    </form>
+                </div>
+
+
+
+            <!-- Enter 4 Digit Code In Btn -->
+                <div id="enter-pin" hidden>
+                    <form action="#">
+                        <h1>Blue Care Clinic</h1>
+                        <img src="../IMAGE/How-It-Works/pin-number.png" alt="Enter PIN" width="100vw" height="100vw">
+                        <h3>Enter your PIN Number</h3>
+                        <p>Enter your PIN number to finally create your Account</p>
+                        <input type="tel" id="pin-num" name="PIN_Number" pattern="[0-9]{4}" autocomplete="off"
+                        title="Enter 4 Digit Pin" placeholder="4 Digit PIN">
+                        <br>
+                        <input type="button" value="Continue" id="pin-btn-Continue" onclick="back2_login()">
+                    </form>
+                </div>
+
+
+            <!-- Login 4 Digit Code Btn -->
+                <div id="login-pin" hidden>
+                    <form action="../HTML/User-Profile.html">
+                        <h1>Blue Care Clinic</h1>
+                        <img src="../IMAGE/How-It-Works/pin-number.png" alt="Enter PIN" width="100vw" height="100vw">
+                        <h3>Enter Your PIN "User"</h3>
+                        <input type="tel" id="login-pin-num" name="PIN_Number" pattern="[0-9]{4}" autocomplete="off"
+                        title="Enter 4 Digit Pin" placeholder="4 Digit PIN">
+                        <br>
+                        <input type="button" value="Continue" id="pin-btn-login">
+                    </form>
+                </div>
+
         </div>
     </section>
 

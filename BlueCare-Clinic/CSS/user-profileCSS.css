@@ -1,0 +1,94 @@
+#body-container{
+    margin-left: 7%;
+}
+#body-container h1{
+    font-family: Bruno Ace SC;
+    margin-left: 7vw;
+    margin-top: 5%;
+    font-size: 2.5vw;
+}
+#form-container form{
+    display: flex;
+    flex-direction: row;
+    margin-top: -2vw;
+}
+#span1{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 3%;
+    margin-right: 3%;
+    margin-left: 8%;
+}
+#span1 label{
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+    margin-top: 2vw;
+    font-family: Alegreya Sans SC;
+}
+#span1 input{
+    margin-left: 2vw;
+    width: 65%;
+    height: 1.8vw;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 1.3vw;
+}
+#span1 select{
+    margin-left: 2vw;
+    width: 65%;
+    height: 2vw;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 1.3vw;
+}
+#span1 select option{
+    font-size: 1.5vw;
+    font-family: Alegreya Sans SC;
+    font-size: 1.3vw;
+}
+
+#span2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 3%;
+    margin-right: 3%;
+    margin-left: 8%;
+}
+#span2 label{
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+    margin-top: 2vw;
+    font-family: Alegreya Sans SC;
+}
+#span2 input{
+    margin-left: 2vw;
+    width: 65%;
+    height: 1.8vw;
+    font-size: 1.3vw;
+    background-color: transparent;
+    border: 1px solid black;
+}
+#span2 select{
+    font-size: 1.3vw;
+    margin-left: 2vw;
+    width: 65%;
+    height: 2vw;
+    background-color: transparent;
+    border: 1px solid black;
+}
+#span2 select option{
+    font-size: 1.3vw;
+    font-family: Alegreya Sans SC;
+}
+#submit{
+    margin-left: 70%;
+    margin-top: 2.5%;
+    width: 15vw;
+    height: 3.5vw;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 1.5vw;
+    font-family: Alegreya Sans SC;
+}

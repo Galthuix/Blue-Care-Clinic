@@ -72,22 +72,25 @@ header h1{
      rgba(0,0,0,0) 100%
      );
 }
-.land-Page-Con h1{
+.land-Page-Con{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.land-Page-Con .firsth1{
     text-align: center;
     font-size: 4.4vw;
-    width: 30vw;
+    width: 35vw;
     font-family: 'Poltawski Nowy', serif;
-    top: 19%;
-    left: 9%;
+    top: 21%;
+    left: 8%;
     position: relative;
     transform: scaleX(1);
     color: white;
     letter-spacing: 0.1em;
 }
-.land-Page-Con span{
-    position: absolute;
-    left: 70%;
-}
+
 #section2{
     width: 100%;
     height: 100vh;
@@ -176,7 +179,7 @@ footer{
     background-color: #007d80;
     transform: scale(1.1, 1.1);
     transform: rotate(2deg);
-    box-shadow: 8px 4px black;
+    box-shadow:  15px 10px 8px 1px #144272;
 }
 
 
@@ -352,4 +355,21 @@ footer{
     top: 90%;
     left: 94%;
     cursor: pointer;
+    scroll-behavior: smooth;    
+}
+#section1 .land-Page-Con button{
+    font-family: Alegreya Sans SC;
+    font-size: 1.5vw;
+    position: absolute;
+    left: 65%;
+    width: 15vw;
+    top: 75%;
+    height: 4vw;
+    border-radius: 2em;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+#section1 .land-Page-Con button:hover{
+    background-color: #007d80;
 }
